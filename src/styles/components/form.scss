@@ -1,0 +1,59 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 52px 5px 60px 0;
+    width: 320px;
+
+    &__label {
+        @include font(montserrat-extrabold);
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $color-mine-shaft;
+
+        span {
+            color: $color-viridian;
+        }
+    }
+
+    &__input {
+        margin: 10px 0 20px;
+        padding: 16px 20px;
+        background: $color-alabaster;
+        border: 1px solid $color-mercury;
+        border-radius: 5px;
+        @include font(montserrat-semibold);
+        font-size: 14px;
+        line-height: 18px;
+        color: $color-mine-shaft;
+        outline: none;
+
+        &::placeholder {
+            opacity: 0.2;
+        }
+    }
+
+    &__button {
+        margin-top: 16px;
+        padding: 12px 20px;
+        background: $color-viridian;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        @include font(montserrat-semibold);
+        font-size: 14px;
+        line-height: 18px;
+        color: $color-white;
+        cursor: pointer;
+        transition: all 1s;
+
+        img {
+            margin-left: 10px;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
