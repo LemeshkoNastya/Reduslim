@@ -10,6 +10,15 @@
         width: 280px;
     }
 
+    @include resolution(tablet) {
+        width: 320px;
+        margin: 28px 0px 60px 0;
+    }
+
+    @include resolution(big-mobile) {
+        width: 280px;
+    }
+
     &__label {
         margin-bottom: 10px;
         @include font(montserrat-extrabold);
@@ -61,6 +70,11 @@
         &:hover {
             transform: scale(1.05);
         }
+
+        @include resolution(tablet) {
+            margin-top: 26px;
+
+        }
     }
 
     &__phone {
@@ -89,6 +103,14 @@
         @include resolution(small-desktop) {
             width: 96px;
         }
+
+        @include resolution(tablet) {
+            width: 116px;
+        }
+
+        @include resolution(big-mobile) {
+            width: 96px;
+        }
     }
 
     &__flag {
@@ -105,11 +127,27 @@
         line-height: 18px;
         color: $color-mine-shaft;
         text-transform: uppercase;
+
+        @include resolution(small-desktop) {
+            right: 65px;
+        }
+
+        @include resolution(tablet) {
+            right: 75px;
+        }
+
+        @include resolution(big-mobile) {
+            right: 65px;
+        }
     }
 }
 
 #name {
     margin-bottom: 20px;
+
+    @include resolution(tablet) {
+        margin-bottom: 18px;
+    }
 }
 
 #tel {
@@ -118,12 +156,32 @@
     @include resolution(small-desktop) {
         width: 174px;
     }
+
+    @include resolution(tablet) {
+        width: 184px;
+    }
+
+    @include resolution(big-mobile) {
+        width: 174px;
+    }
 }
 
 .iti__flag {
     position: absolute;
     right: 58px;
     background-image: url("./../assets/img/flags.png");
+
+    @include resolution(small-desktop) {
+        right: 48px;
+    }
+
+    @include resolution(tablet) {
+        right: 58px;
+    }
+
+    @include resolution(big-mobile) {
+        right: 48px;
+    }
 }
 
 .iti__arrow {
@@ -136,4 +194,16 @@
     border-right: none;
     border-top: none;
     background: url('./../assets/icons/arrow2.svg');
+
+    @include resolution(small-desktop) {
+        right: 23px;
+    }
+
+    @include resolution(tablet) {
+        right: 34px;
+    }
+
+    @include resolution(big-mobile) {
+        right: 23px;
+    }
 }

@@ -1,12 +1,30 @@
 .info {
     position: relative;
 
+    @include resolution(tablet) {
+        position: static;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
     &__title {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 38px 40px;
         height: 100%;
+
+        @include resolution(tablet) {
+            flex-direction: row;
+            height: auto;
+            width: 320px;
+            padding: 40px 0 0;
+        }
+
+        @include resolution(big-mobile) {
+            width: 280px;
+        }
     }
 
     &__text {
@@ -14,6 +32,10 @@
         font-size: 18px;
         line-height: 23px;
         color: $color-white;
+
+        @include resolution(tablet) {
+            color: $color-mine-shaft;
+        }
     }
 
     &__image {
@@ -25,5 +47,22 @@
             left: 20px;
             width: 310px;
         }
+
+        @include resolution(tablet) {
+            left: calc(50% - 155px);
+            top: 230px;
+        }
+
+        @include resolution(big-mobile) {
+            top: 181px;
+            left: calc(50% - 104px);
+            width: 223px;
+        }
+    }
+}
+
+.br {
+    @include resolution(tablet) {
+        display: none;
     }
 }

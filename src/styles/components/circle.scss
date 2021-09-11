@@ -14,6 +14,10 @@
         width: 600px;
         height: 600px;
     }
+
+    @include resolution(tablet) {
+        display: none;
+    }
 }
 
 .circle-2 {
@@ -29,5 +33,17 @@
         width: 298px;
         height: 298px;
         top: 115px;
+    }
+
+    @include resolution(tablet) {
+        position: static;
+        margin-top: 10px;
+        width: 260px;
+        height: 260px;
+    }
+
+    @include resolution(big-mobile) {
+        width: 202px;
+        height: 202px;
     }
 }
