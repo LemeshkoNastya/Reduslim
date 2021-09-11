@@ -1031,8 +1031,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -1580,12 +1579,6 @@ template {
   color: #212121;
   outline: none;
 }
-.form__input::-moz-placeholder {
-  opacity: 0.2;
-}
-.form__input:-ms-input-placeholder {
-  opacity: 0.2;
-}
 .form__input::placeholder {
   opacity: 0.2;
 }
@@ -1761,6 +1754,25 @@ template {
   .iti__arrow {
     right: 23px;
   }
+}
+
+.iti__country-list {
+  white-space: normal;
+  top: 10px;
+  right: 0;
+}
+
+.iti__country {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+.iti__country .iti__flag {
+  position: static;
+}
+
+.iti__country-name {
+  width: 100%;
 }
 
 .footer {
