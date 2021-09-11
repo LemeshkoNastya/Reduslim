@@ -207,3 +207,23 @@
         right: 23px;
     }
 }
+
+.iti__country-list {
+    white-space: normal;
+    top: 10px;
+    right: 0;
+}
+
+.iti__country {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+
+    .iti__flag {
+        position: static;
+    }
+}
+
+.iti__country-name {
+    width: 100%;
+}
