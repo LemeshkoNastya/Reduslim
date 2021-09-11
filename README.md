@@ -2,7 +2,7 @@
 
 ## Посмотреть сайт можно по [ссылке](https://lemeshkonastya.github.io/Reduslim/)
 
-![Deploy project](https://github.com/LemeshkoNastya/Reduslim/blob/master/demo.gif)
+![Deploy project](https://github.com/LemeshkoNastya/Reduslim/blob/main/demo.gif)
 
 ### Установка проекта
 ```
