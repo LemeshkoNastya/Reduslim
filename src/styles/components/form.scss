@@ -1,3 +1,5 @@
+@import 'intl-tel-input/build/css/intlTelInput.css';
+
 .form {
     display: flex;
     flex-direction: column;
@@ -5,6 +7,7 @@
     width: 320px;
 
     &__label {
+        margin-bottom: 10px;
         @include font(montserrat-extrabold);
         font-size: 12px;
         line-height: 16px;
@@ -18,7 +21,6 @@
     }
 
     &__input {
-        margin: 10px 0 20px;
         padding: 16px 20px;
         background: $color-alabaster;
         border: 1px solid $color-mercury;
@@ -35,7 +37,7 @@
     }
 
     &__button {
-        margin-top: 16px;
+        margin-top: 36px;
         padding: 12px 20px;
         background: $color-viridian;
         border-radius: 5px;
@@ -56,4 +58,70 @@
             transform: scale(1.05);
         }
     }
+
+    &__phone {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__country {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        background: $color-alabaster;
+        border: 1px solid $color-mercury;
+        border-radius: 5px;
+        @include font(montserrat-semibold);
+        font-size: 14px;
+        line-height: 18px;
+        color: $color-mine-shaft;
+        outline: none;
+        width: 116px;
+        height: 50px;
+    }
+
+    &__flag {
+        display: none;
+    }
+
+    &__iso {
+        position: absolute;
+        right: 75px;
+        top: 15px;
+        z-index: 1;
+        @include font(montserrat-semibold);
+        font-size: 14px;
+        line-height: 18px;
+        color: $color-mine-shaft;
+        text-transform: uppercase;
+    }
+}
+
+#name {
+    margin-bottom: 20px;
+}
+
+#tel {
+    width: 184px;
+}
+
+.iti__flag {
+    position: absolute;
+    right: 58px;
+    background-image: url("./../assets/img/flags.png");
+}
+
+.iti__arrow {
+    position: absolute;
+    right: 34px;
+    margin-left: 0;
+    width: 10px;
+    height: 6px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background: url('./../assets/icons/arrow2.svg');
 }
