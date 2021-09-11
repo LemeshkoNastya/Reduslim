@@ -20,5 +20,10 @@
         position: absolute;
         top: 212px;
         left: 57px;
+
+        @include resolution(small-desktop) {
+            left: 20px;
+            width: 310px;
+        }
     }
 }

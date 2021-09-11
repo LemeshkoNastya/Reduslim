@@ -7,6 +7,13 @@
     border: 20px solid $color-white;
     border-radius: 344px;
     opacity: 0.03;
+
+    @include resolution(small-desktop) {
+        top: -35px;
+        left: 141px;
+        width: 600px;
+        height: 600px;
+    }
 }
 
 .circle-2 {
@@ -17,4 +24,10 @@
     left: 20px;
     border-radius: 199px;
     background: $color-viridian;
+
+    @include resolution(small-desktop) {
+        width: 298px;
+        height: 298px;
+        top: 115px;
+    }
 }
